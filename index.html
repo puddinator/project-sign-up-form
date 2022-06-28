@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up!</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo-container">
+            <img class="logo-img" src="./media/images/logo.png" alt="Logo">
+            <h3 class="logo-txt">Odin</h3>
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            This is just some random text I put in. Create a new account immediately (urgent).
+        </h1>
+        <h1>
+            Sign up <em>now</em> or risk your life.
+        </h1>
+        <form id="register">
+            <h1>
+                Let's do this!
+            </h1>
+            <ul>
+                <li class="form-input">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" class="input-box" required>
+                </li>
+                <li class="form-input">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" class="input-box">
+                </li>
+                <li class="form-input">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" class="input-box" required>
+                </li>
+                <li class="form-input">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="number" id="phone-number" class="input-box" required>
+                </li>
+                <li class="form-input">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" class="input-box" required minlength="8">
+                </li>
+                <li class="form-input">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password" class="input-box" required minlength="8">
+                </li>
+            </ul>
+        </form>
+        <button form="register" type="submit">Create Account</button>
+        <footer>Already have an account? <a href="https://www.google.com">Log In</a></footer>
+    </div>
 </body>
+
 </html>
